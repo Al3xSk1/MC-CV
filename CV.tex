@@ -1,0 +1,258 @@
+% Alex (slimshaksey) — Minecraft Development CV
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.65in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+\definecolor{accent}{HTML}{333333}
+\definecolor{textgray}{HTML}{555555}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlist[itemize]{leftmargin=1.2em, itemsep=1pt, topsep=2pt, parsep=0pt}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0pt}
+  {}
+  [\vspace{-4pt}\rule{\textwidth}{0.5pt}]
+
+\newcommand{\role}[4]{
+  \textbf{#1} \hfill \textit{#2}\\
+  \textcolor{textgray}{#3} \hfill \textcolor{textgray}{#4}
+  \vspace{2pt}
+}
+
+\begin{document}
+
+% Header
+{\LARGE\bfseries Alex ``slimshaksey''}
+
+\vspace{3pt}
+{\large Minecraft Plugin \& Server Systems Developer}
+
+\vspace{5pt}
+U.S.A. \textbullet{} EST/EDT \quad
+\href{mailto:slim@og-gnu.org}{slim@og-gnu.org} \quad
+\href{https://github.com/Al3xSk1}{github.com/Al3xSk1} \quad
+\href{https://git.kovalskitech.com/alex}{git.kovalskitech.com/alex}
+
+\section{Profile}
+
+Minecraft plugin and server systems developer with professional and independent
+experience building custom gameplay, infrastructure, and content-facing systems
+for heavily modified Minecraft environments. Primary development is in Java,
+with additional experimentation in Kotlin and Skript where it fits the project.
+Comfortable working across Paper, Folia, MultiPaper, ShreddedPaper, Spigot, and
+Velocity, including projects that substantially alter Minecraft's mechanics,
+server behavior, and presentation layer.
+
+I work best on servers that need more than small utility plugins: custom
+mechanics, integrations between complex plugin ecosystems, database-backed
+features, server-specific workflows, and code that has to survive real player
+traffic.
+
+\section{Core Capabilities}
+
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\textbf{Plugin Development} &
+Custom Paper/Spigot plugins, server utilities, gameplay systems, commands,
+listeners, configuration-driven features, and integrations with existing
+plugin stacks \\[2pt]
+\textbf{Server Platforms} &
+Paper, Folia, MultiPaper, ShreddedPaper, Spigot, Velocity, and modern
+Minecraft server environments from 1.20 through current releases \\[2pt]
+\textbf{Gameplay Systems} &
+Custom movement, progression, dungeon/server mechanics, economy-adjacent
+features, content hooks, and player-facing interaction systems \\[2pt]
+\textbf{Content Pipelines} &
+MythicMobs, Model Engine, CraftEngine, datapacks, resource packs, and systems
+that connect server-side behavior to client-facing presentation \\[2pt]
+\textbf{Infrastructure} &
+Gradle builds, Git workflows, SQLite/MariaDB persistence, Linux server
+administration, and homelab-backed development/testing environments
+\end{tabularx}
+
+\section{Minecraft Development Experience}
+
+\role{Minecraft Plugin Development}{2021--Present}{Independent / Server Projects}{Java}
+
+\begin{itemize}
+  \item Developed Minecraft plugins and server-side systems for multiple projects,
+        including LifeS1eel, MineVeXx, and Infinity Dungeon.
+  \item Contributed to server direction and gameplay planning for Minting, a
+        server-side modded Origins-style project.
+  \item Worked across Minecraft versions from 1.20 through current releases,
+        adapting systems to changing APIs and server implementations.
+  \item Built custom gameplay systems, server utilities, command/listener-driven
+        features, and integrations with third-party plugins in heavily modified
+        server environments.
+  \item Developed primarily for Paper-based ecosystems, with experience in
+        Folia, MultiPaper, ShreddedPaper, Spigot, and Velocity.
+  \item Worked with plugins that significantly change Minecraft's gameplay and
+        content pipeline, including MythicMobs, Model Engine, and CraftEngine.
+  \item Used datapacks and resource packs when server-side implementations
+        benefited from additional vanilla or client-facing functionality.
+  \item Implemented persistent systems backed by SQLite or MariaDB when features
+        required stored player, server, or gameplay state.
+  \item Maintained Gradle-based Java projects and used Git for iterative feature
+        development, bug fixing, and project history.
+  \item Debugged compatibility issues between custom code, server forks,
+        Minecraft version changes, and third-party plugin behavior.
+\end{itemize}
+
+\section{Selected Server Experience}
+
+\role{LifeS1eel}{2021--Present}{Lifesteal Server}{All major re-releases}
+
+\begin{itemize}
+  \item Contributed across multiple major releases and iterations of a
+        lifesteal-focused Minecraft server.
+  \item Developed and maintained custom server-side functionality and plugins
+        used as part of the server's core gameplay experience.
+  \item Adapted code and feature behavior across relaunches, changing gameplay
+        goals, and updated Minecraft/server versions.
+  \item Worked within an existing server ecosystem, integrating custom features
+        with the surrounding plugin stack instead of treating systems as
+        isolated one-off plugins.
+\end{itemize}
+
+\role{Minting}{Release Cycle}{Direction Team}{Server-side modded Origins server}
+
+\begin{itemize}
+  \item Served on the direction team for a server-side modded Origins-style
+        server during its release cycle.
+  \item Helped shape the project's gameplay direction, server identity, and
+        player-facing experience without relying on a required texture pack.
+  \item Supported planning around launch requirements, feature priorities, and
+        the intended gameplay loop.
+  \item Worked with release-cycle constraints, helping prioritize decisions
+        needed for a playable server experience.
+\end{itemize}
+
+\role{MineVeXx}{Server Project}{Box RPG Server}{}
+
+\begin{itemize}
+  \item Developed custom functionality for a box RPG Minecraft server.
+  \item Worked on server-side features that supported progression, contained
+        gameplay spaces, and RPG-oriented player loops.
+  \item Integrated custom systems into the surrounding server stack so gameplay
+        features felt like part of the core server experience.
+\end{itemize}
+
+\role{Infinity Dungeon}{2026--Present}{Dungeon Run Server}{}
+
+\begin{itemize}
+  \item Developing server-side systems and custom Minecraft functionality for a
+        dungeon-run server experience.
+  \item Working on gameplay logic, integration points, and server behavior that
+        support more structured custom content than vanilla Minecraft provides.
+  \item Building with long-term maintainability in mind so systems can continue
+        evolving as the server design changes.
+\end{itemize}
+
+\section{Relevant Technical Work}
+
+\begin{itemize}
+  \item Designed systems around Minecraft's event-driven server model, including
+        player interaction, movement, world, entity, and command behavior.
+  \item Built features that bridge plugin code with data/configuration so server
+        owners can tune behavior without rewriting the implementation.
+  \item Worked with modern Paper-family development patterns, including API
+        changes between Minecraft versions and the constraints of alternative
+        server implementations.
+  \item Integrated custom gameplay features with content-heavy plugins and
+        resource-pack-backed presentation systems.
+  \item Used relational databases for persistent feature data, local testing,
+        and server-backed state where flat files were not sufficient.
+  \item Managed Linux-based development and server environments, including
+        tooling, builds, and deployment-adjacent workflows.
+\end{itemize}
+
+\section{Selected Projects}
+
+\textbf{Movements} \hfill \href{https://github.com/Al3xSk1}{GitHub}
+
+\textit{Custom Minecraft movement system}
+
+\begin{itemize}
+  \item Designed and implemented the project independently.
+  \item Implements movement mechanics inspired by the style and feel of
+        \textit{Mirror's Edge}, translating non-standard movement concepts into
+        Minecraft server-side systems.
+  \item Focused on making movement feel responsive while working within
+        Minecraft's server-authoritative gameplay model.
+  \item Explored how custom player movement can be layered onto existing
+        Minecraft controls without requiring a full custom client.
+\end{itemize}
+
+\textbf{Fission MC}
+
+\textit{Minecraft server-side codebase rewrite}
+
+\begin{itemize}
+  \item Worked on a large-scale rewrite of Minecraft server-side code,
+        focusing on replacing or reworking fundamental server behavior.
+  \item Gained experience reading and modifying lower-level server logic beyond
+        ordinary plugin entry points.
+  \item Built comfort with codebases where performance, compatibility, and
+        system boundaries matter more than simple feature scripting.
+\end{itemize}
+
+\textbf{Private / NDA Server Work}
+
+\textit{Custom plugin and systems development}
+
+\begin{itemize}
+  \item Additional Minecraft server projects are omitted or generalized due to
+        NDA restrictions.
+  \item Work included custom gameplay functionality, plugin integrations,
+        release support, and server-specific feature development.
+\end{itemize}
+
+\section{Technical Skills}
+
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\textbf{Languages} &
+Java; Kotlin (currently experimenting); Skript; SQL \\[2pt]
+\textbf{Minecraft} &
+Paper; Folia; MultiPaper; ShreddedPaper; Spigot; Velocity;
+Datapacks; Resource Packs; server API development \\[2pt]
+\textbf{Plugin Ecosystem} &
+MythicMobs; Model Engine; CraftEngine; and other gameplay/content
+overhauls \\[2pt]
+\textbf{Build / Version Control} &
+Gradle Kotlin DSL (preferred); Gradle Groovy; Git; GitHub; self-hosted Git \\[2pt]
+\textbf{Databases} &
+SQLite; MariaDB; database-backed application development \\[2pt]
+\textbf{Systems} &
+Arch Linux; Linux server administration; homelab infrastructure \\[2pt]
+\textbf{Development Focus} &
+Gameplay systems; performance-sensitive server behavior; plugin compatibility;
+custom server architecture
+\end{tabularx}
+
+\section{Development Approach}
+
+I enjoy working close to the server implementation and building systems that
+push Minecraft beyond its standard gameplay model. I am particularly interested
+in performance-sensitive server development, custom gameplay mechanics,
+large-scale rewrites, and integrating multiple systems into cohesive server
+experiences.
+
+My approach is practical: understand the existing server first, build features
+that fit its architecture, and keep code maintainable enough that future
+releases are not painful. I care about how systems feel to players, how they
+behave under real server conditions, and how easily other developers or server
+owners can reason about them later.
+
+\end{document}
